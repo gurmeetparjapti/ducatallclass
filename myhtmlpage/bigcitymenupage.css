@@ -1,0 +1,84 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/1802075.jpg);
+    background-size: 100%;
+    display: var("hello");
+    background-size: 100% 110%;
+}
+h1{
+    color: rgb(179, 202, 245);
+   font-size: 50px;
+    text-shadow: 5px 3px 5px black;
+}
+.content{
+    text-shadow: 5px 3px 5px black;
+    font-size: 1cm;
+    color: white;
+    font-family: impact;
+}
+.br{
+    background-color: rgba(2,0,0,0.5);
+    border-radius: 20px 20px;
+    width: 100%;
+}
+
+.text{
+   font-size: large;
+   color: white;
+   text-align: center;
+}
+.text>a:hover{
+    background-color: red;
+    transition: 1s;
+    opacity: 0.5;
+}
+.text>a{
+    color: white;
+    border:1px solid none;
+    transition: 1s;
+    padding: 20px;
+}
+#hello{
+    display: flex;
+    border: 1px solid none;
+    margin-left: 150px;
+    border-radius: 40% 20%;
+    box-shadow: 5px 4px 6px black;
+    padding: 10px;
+}
+#hello{
+    float: left;
+}
+button{
+    width:200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius:25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: aqua;
+    cursor: pointer;
+    object-position: center;
+}
+button:hover{
+    background-color: red;
+}
+#hr{
+    margin-left: 12cm;
+}
+p::first-line {
+    color: red;
+    font-variant: small-caps;
+    font-size: 20px;
+  }
+  p::first-letter{
+    font-size: 1cm;
+    color: white;
+  }
+  p{
+    font-size: 20px;
+    border: solid black;
+    width: 800px;
+    margin-top: 200px;
+  }
+ 

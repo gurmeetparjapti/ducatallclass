@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .navbar {
+            border: 1px solid none;
+            display: flex;
+            width: 100%;
+            border-radius: 5px 5px;
+            float: left;
+            background: linear-gradient(0deg, yellow, lightgreen, lightgreen, white, white);
+            margin-top: 5px;
+        }
+
+        .navbar>a:hover {
+            color: red;
+            transition: 1s;
+            transform: scale(1.1, 1.1);
+            transition-duration: 500ms;
+            box-shadow: 0px 0px 10px black;
+            z-index: 1;
+        }
+
+        .navbar>a {
+            flex: 1;
+            font-size: 30px;
+            text-align: center
+        }
+
+        body {
+            background-image: url(https://wallpaperaccess.com/full/12314.jpg);
+            background-size: 100%;
+            background-position: fixed;
+        }
+
+        .west {
+            text-align: center;
+            color: white;
+        }
+        p{
+            width: 400px;
+            margin-top:30px ;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 1cm;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="icon"><i class="fa fa-fw fa-home"></i></a>
+        <a href="#" class="icon"><i class="fa fa-user"></i></a>
+        <a href="#" class="icon"><i class="fa fa-fire"></i></a>
+        <a href="#" class="icon"><i class="fa fa-phone"></i></a>
+        <a href="#" class="icon"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="icon"><i class="fa fa-search"></i></a>
+    </div>
+    <div>
+        <div class="west">
+            <h1>This is the website</h1>
+            <p>The World Wide Web, commonly known as the Web, is an information system enabling documents and other web
+                The World Wide Web, commonly known as the Web, is an information system enabling documents and other web
+                resources to be accessed over the Internet.
+            resources to be accessed over the Internet.</p>
+        </div>
+    </div>
+</body>
+
+</html>

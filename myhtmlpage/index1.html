@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     marquee{
+        font-size: 30px;
+        color:lightgreen;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 0 0 0.5 black;
+        
+     }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 8%;
+            padding-right: 7%;
+            background-color: rgb(223, 220, 215);
+            position: fixed;
+            width: 100%;
+        }
+
+        span {
+            color: rgb(32, 176, 228);
+            font-size: 30px;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px 15px;
+            list-style-type: none;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+            padding: 10px;
+        }
+
+        li a:hover:not(.active) {
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+        .active {
+            background-color: yellow;
+            border-radius: 10px 10px;
+        }
+        h1,
+        h2 {
+            font-size: 50px;
+        }
+        button {
+            border: 1px solid none;
+            padding: 10px 10px;
+            color: white;
+            border-radius: 10px 10px;
+            width: 200px;
+            background-color: black;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .bg {
+            background-image: url(https://www.freepnglogos.com/uploads/sea-png/sea-wave-photo-transparent-png-stickpng-0.png);
+        }
+
+        section {
+            width: 100%;
+            height: 1000px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .blo {
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 1000px;
+        }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            top: 60%;
+            color: white;
+            text-align: center;
+        }
+
+        .text h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .blo2 {
+            font-size: 40px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        @media(max-width: 1200px) {
+            ul>li {
+                display: block;
+            }
+        }
+        @media(max-width:700px) {
+
+            .text>div,
+            h2,
+            button {
+                align-items: center;
+            }
+          span{
+                color: red;
+                font-size: 22px;
+            }
+            h2{
+                font-size: 30px;
+                color: black;
+                text-justify: inherit;
+            }
+        }
+
+        @media(max-width:500px) {
+            .bg.blog {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 60%;
+                text-align: center;
+            }
+            .blo{
+                background-image: url(https://www.freepnglogos.com/uploads/sea-png/sea-wave-photo-transparent-png-stickpng-0.png);
+                background-size: cover;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="what">
+            <h1 class="logo">AMIGA<span id="red">FASHION'ARTS</span></h1>
+        </div>
+
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#animation">vlog</a></li>
+            <li><a href="#">some item's</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="blo">
+            <div class="text">
+                <div>
+                    <marquee scrollamount="20" direction="right" width="100%" >
+                        <h2>We are make's a new india </h2>
+                    </marquee>
+                </div>
+                <h1>We<span> creat's</span>fashionable dress</h1>
+                <h2 class="blo2">parallax and <span>wordpress</span>themes</h2>
+                <button type="button">Read more</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
